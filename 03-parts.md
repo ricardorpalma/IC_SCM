@@ -1,5 +1,4 @@
 
-
 # Cambio en las pautas de consume y movilidad post-covid
 
 Autores:

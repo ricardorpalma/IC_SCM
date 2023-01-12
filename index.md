@@ -1,7 +1,7 @@
 --- 
 title: "IC & SCM Post COVID_19"
 author: 'Editores: Ricardo R. Palma y Gustavo A. Masera'
-date: "2023-01-11"
+date: "2023-01-12"
 output: pdf_document
 documentclass: book
 bibliography:
