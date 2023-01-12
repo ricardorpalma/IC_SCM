@@ -1,5 +1,4 @@
-
-# La influencia del gas ruso en la economía mundial
+# La influencia del gas ruso en la economia mundial
 
 **Autores**
  Aruani, Juan^[juan.aruani.99@gmail.com]

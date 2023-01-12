@@ -1,13 +1,12 @@
-
-# Wine turism as a resilient trend in post-covid era
+# Wine turism as a resilient trend in post covid era
 Authors:
 
-Elias Da Rosa^[eliasemmanueldarosa99@gmail.com] 
-Facundo Moyano 
-Juan Francisco Najul^[juanfra.najul@gmail.com] 
-Alvaro Navarro 
-Guido Scopel^[Guido Scopel <guidoscopeta@gmail.com>]
-Kalindy Tillar^[kalindyvanesa@gmail.com]
+- Elias Da Rosa^[eliasemmanueldarosa99@gmail.com] 
+- Facundo Moyano 
+- Juan Francisco Najul^[juanfra.najul@gmail.com] 
+- Alvaro Navarro 
+- Guido Scopel^[Guido Scopel <guidoscopeta@gmail.com>]
+- Kalindy Tillar^[kalindyvanesa@gmail.com]
 
 
 ## Abstract. {-} 

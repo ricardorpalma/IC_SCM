@@ -1,5 +1,4 @@
-
-# Introducción a los escenarios globales
+# Los nuevos escenarios globales
 
 
 ## Los nuevos escenarios energéticos
