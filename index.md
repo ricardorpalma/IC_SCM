@@ -47,7 +47,7 @@ y al grupo de trabajo de CyTED
 - Secretaría de Ciencia Técnica y Posgrado de la Universidad Nacional de Cuyo
 
 
-![SECTYP](images/siip-investigacionposgrado.png)
+![SECTYP](images/siip-investigacionposgrado.jpg)
 
 
 
