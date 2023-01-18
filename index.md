@@ -1,14 +1,16 @@
 --- 
 title: "IC & SCM Post COVID_19"
 author: 'Editores: Ricardo R. Palma y Gustavo A. Masera'
-date: "2023-01-12"
-output: pdf_document
+date: "2023-01-18"
+output:
+  html_document:
+    df_print: paged
 documentclass: book
 bibliography:
 - book.bib
 - packages.bib
 url: https://github.com/ricardorpalma/IC_SCM
-cover-image: images/cover.png
+cover-image: images/coverMZA.png
 description: |
   This is a minimal example of using the bookdown package to write a book.
   set in the _output.yml file.
@@ -23,7 +25,7 @@ site: bookdown::bookdown_site
 
 Este libro es una compilación de los trabajos de investigación y estancias de investigadores de varios colegas de latino américa y caribe. Guestavo Masera y Ricardo Palma desean agradecer a todos los colaboradores que nos han confiado sus materiales para que los editemos en esta publicación. Como docentes investigadores de la Universidad Nacional de Cuyo hemos vivido este fenómeno singular de tiempo que denominamos la pandemia del post-covid-19 y como los autores de los capítulos incluidos, tenemos la convicción que la existencias de nuevas estrategias emergentes y prácticas innovadoras que mejoras la resiliencia y han demostrado innovación de la gestión de las infraestructuras críticas y las cadenas de suministros.
 
-![Infraestructuras Críticas y Cadenas de Suministros Post COVID-19](images/cover.png)
+![Infraestructuras Críticas y Cadenas de Suministros Post COVID-19](images/coverMZA.png)
 
 ## Agradecimientos: {-}
 
