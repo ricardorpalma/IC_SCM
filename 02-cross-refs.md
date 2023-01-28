@@ -1,23 +1,18 @@
-# La influencia del gas ruso en la economia mundial
-
-**Autores**
- Aruani, Juan^[juan.aruani.99@gmail.com]
-- Herrera, Lisandro^[herreralisandro.uncu@gmail.com]
-- López, Emilia^[emilia.lop49@gmail.com]
+# Escenarios energéticos globales
 
 
-## Abstract
+## Introducción
 
 La producción de petróleo crudo de EEUU ha aumentado significativamente durante los últimos 10 años, impulsada principalmente por la producción de formaciones rocosas estrechas desarrolladas mediante perforación horizontal y fracturación hidráulica (fracking) para extraer hidrocarburos. A principios del 2019, el fracking posicionó a Estados Unidos como el mayor productor mundial de petróleo, incluso por encima de los grandes productores como Rusia y Arabia Saudí. En aquel año, Donald Trump, en ese entonces presidente del país americano, señalaba que Estados Unidos había logrado independencia energética y que además había logrado controlar el mercado energético.
 El problema comenzó cuando a finales de aquel año, el COVID-19 significó un problema generalizado en las economías del mundo y afectó, entre tantas cosas, al mercado del petróleo. La caída del precio del petróleo marcó un récord histórico. Esto llevó a los productores de petróleo y gas a cancelar contratos y obligar a los proveedores a abandonar sus bombas gigantes y sus depósitos de productos químicos. Aproximadamente 31 empresas de fractura hidráulica, lo que representa el 11% de las que operaban a principios del 2020, se desvincularon de la actividad durante la última semana de Marzo, y más del 40% de las 421 que operaron durante el 2019 quedaron olvidadas.
 En Estados Unidos, a comienzos del año, en febrero de 2020 realizó cerca de 7300 perforaciones que finalmente se abandonaron, una comparativa que resulta preocupante si se observa que el mes anterior solo dejaron de hacerlo alrededor de 80 perforaciones. 
 
 
-## Contingencia post COVID-19
+##  Contingencia post COVID-19
 
 La extracción de crudo y gas alcanzó los niveles previos a la pandemia recién en enero de 2022. El 9 de septiembre, Baker Hughes informó que 166 plataformas de gas natural estaban operando en los Estados Unidos, 54 más que al comienzo de la pandemia en los Estados Unidos.
 
-![Extracción durante la pandemia U.S. Energy Information Administration](images/Extracción 2019-2022.jpg)
+![Extracción 2019 al 2022](images/Extrac20192022.jpg)
 
 
 La mayor parte del crecimiento de las plataformas dirigidas a gas natural en Estados Unidos se ha producido en la región de Haynesville, que se extiende por Texas y Nuevo México. El número de plataformas en Haynesville aumentó en más del 50 % entre enero de 2020 y agosto de 2022. A pesar de los precios relativamente altos del gas natural, la perforación en Haynesville sigue siendo económica. La productividad de los pozos de Haynesville y su proximidad a las terminales de exportación de gas natural licuado (GNL) de la Costa del Golfo de EEUU y a los principales consumidores industriales de gas natural atraen a los operadores a la región.
@@ -26,7 +21,7 @@ La actividad de las plataformas en la región de los Apalaches de Pensilvania y 
 
 
 
-![](images/Precio regional 2019-2022.jpg)
+![Evolución de precios durante la pandemia](images/Precio19_22.jpg)
 
 
 ## La producción de petróleo y sus derivados en la actualidad
@@ -37,7 +32,7 @@ China tiene ahora el 5% del crudo a nivel mundial, casi 5 millones de barriles p
 
 Estados Unidos produce casi 19 millones de barriles por día, 20% de la producción mundial que no alcanza para satisfacer sus demandas hoy.
 
-![](images/Tabla de producción.jpg)
+![](images/Tablaproduccion.jpg)
 
 
 ## La dependencia del gas y el petróleo ruso
@@ -91,7 +86,7 @@ ctualmente totaliza **1.115 TCF´s** de shale gas, la principal formación geol�
 Es el segundo país del mundo con mayores reservas técnicamente recuperables de shale gas fuera de USA con **802 TCF´s**. Entre las formaciones geológicas más importantes se deben destacar Vaca Muerta con 308 TCF´s y Los Molles con 275 TCF´s, ambas formaciones situadas en la cuenca Neuquina, las que representan el 72,7% del total de reservas de shale gas del territorio nacional.
 
 
-### Argelia
+### Algeria
 
 
 
@@ -106,7 +101,7 @@ Es el cuarto país a nivel mundial con mayores reservas técnicamente recuperabl
 
 ### México
 
-ste país cuenta con **545 TCF´s** de shale gas técnicamente recuperables. La formación geológica más importante es Eagle Ford Shale en la región de Burgos, dicha formación totaliza 343 TCF´s y representa el 62,9% del total del país.
+Este país cuenta con **545 TCF´s** de shale gas técnicamente recuperables. La formación geológica más importante es Eagle Ford Shale en la región de Burgos, dicha formación totaliza 343 TCF´s y representa el 62,9% del total del país.
 
 
 
@@ -144,7 +139,7 @@ Cuenta con 18 billones de bbl técnicamente recuperables de shale oil. La formac
 
 
 
-## Fuentes consultadas
+## Fuentes
 
 * https://cnnespanol.cnn.com/2022/10/05/petroleo-productores-consumidores-orix/
 * https://www.imf.org/es/Blogs/Articles/2022/07/19/blog-how-a-russias-natural-gas-cutoff-could-weigh-on-european-economies
@@ -155,8 +150,5 @@ Cuenta con 18 billones de bbl técnicamente recuperables de shale oil. La formac
 * Advanced Resources International (ARI): http://www.adv-res.com
 * U.S. Energy Information Administration (EIA): http://www.eia.gov
 * U.S. Department of Energy (DOE): http://www.energy.gov
-
-
-
 
 
