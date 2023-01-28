@@ -1,7 +1,9 @@
-# Cambio en las pautas de consume y movilidad post-covid
+# Cambio en las pautas de consumo y movilidad post-covid
 
-Autores:
-**Ruiz Renzo** y **Rivas Mauro**
+Autores - Grupo Montevideo de Universidades:
+
+- **Ruiz Renzo** ^[reruiz96@gmail.com ]
+- **Rivas Mauro** ^[maurorivas-95@hotmail.com]
 
 ## Introducción
 

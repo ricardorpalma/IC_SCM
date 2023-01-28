@@ -1,5 +1,10 @@
-# Escenarios energéticos globales
+# Escenarios energeticos globales
 
+Autores: SECTyP Rectorado Universidad Nacional de Cuyo
+
+- Aruani, Juan^[AUGM mailto:juan.aruani.99@gmail.com ]
+- Herrera, Lisandro^[AUGM mailto:herreralisandro.uncu@gmail.com ]
+- López, Emilia^[AUGM mailto:emilia.lop49@gmail.com]
 
 ## Introducción
 
