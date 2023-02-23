@@ -2,4 +2,4 @@
 Infraestructura Crítica y Cadenas de Suministros Post Covid19
 
 Universidad Nacional de Cuyo
-ISBN En trámite.
+ISBN 978-987-88-8016-7
