@@ -1,4 +1,4 @@
-# Influencia de la volatilidad de los precios del petróleo en la producción Sudamericana de plásticos. 
+# Influencia de la volatilidad de los precios del petroleo en la produccion Sudamericana de plasticos. 
 
 **Autores**
 
