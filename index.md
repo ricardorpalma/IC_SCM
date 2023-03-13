@@ -1,7 +1,7 @@
 --- 
 title: "IC & SCM Post COVID_19"
 author: 'Editores: Ricardo R. Palma y Gustavo A. Masera'
-date: "2023-02-23"
+date: "2023-03-13"
 output:
   html_document:
     df_print: paged
@@ -12,9 +12,7 @@ bibliography:
 url: https://github.com/ricardorpalma/IC_SCM
 cover-image: images/coverMZA.png
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  set in the _output.yml file.
-  The HTML output format for this example is bookdown::bs4_book,
+  Este libro es una compilación de los trabajos de investigación y estancias de investigadores de varios colegas de latino américa y caribe. Guestavo Masera y Ricardo Palma desean agradecer a todos los colaboradores que nos han confiado sus materiales para que los editemos en esta publicación. Como docentes investigadores de la Universidad Nacional de Cuyo hemos vivido este fenómeno singular de tiempo que denominamos la pandemia del post-covid-19 y como los autores de los capítulos incluidos, tenemos la convicción que la existencias de nuevas estrategias emergentes y prácticas innovadoras que mejoras la resiliencia y han demostrado innovación de la gestión de las infraestructuras críticas y las cadenas de suministros.
 biblio-style: apalike
 csl: "chicago-fullnote-bibliography.csl"
 site: bookdown::bookdown_site
@@ -23,7 +21,7 @@ site: bookdown::bookdown_site
 # Introducción {-}
 
 
-Este libro es una compilación de los trabajos de investigación y estancias de investigadores de varios colegas de latino américa y caribe. Guestavo Masera y Ricardo Palma desean agradecer a todos los colaboradores que nos han confiado sus materiales para que los editemos en esta publicación. Como docentes investigadores de la Universidad Nacional de Cuyo hemos vivido este fenómeno singular de tiempo que denominamos la pandemia del post-covid-19 y como los autores de los capítulos incluidos, tenemos la convicción que la existencias de nuevas estrategias emergentes y prácticas innovadoras que mejoras la resiliencia y han demostrado innovación de la gestión de las infraestructuras críticas y las cadenas de suministros.
+Este libro es una compilación de los trabajos de investigación y estancias de investigadores de varios colegas de Latinoamérica y Caribe realizados entre 2020 y 2021 en el que se recopilas las mejores prácticas relevadas entorno a la innovación en la gestión, medición de riesgo, exposición y gobernanza de las infraestructuras críticas en la post pandemia. Gustavo Masera y Ricardo Palma desean agradecer a todos los colaboradores que nos han confiado sus materiales para que los editemos en esta publicación. Como docentes investigadores de la Universidad Nacional de Cuyo hemos vivido este fenómeno singular de tiempo que denominamos post-covid-19 y como los autores de los capítulos incluidos, tenemos la convicción que que aún existen nuevas estrategias emergentes y prácticas innovadoras que no hemos detectado, pero mejoran notablemente la resiliencia a la hora de enfrentar desafíos que superan ampliamente la capacidad con la que estas infraestructuras fueron concebidas. Ninguna infraestructura es autosuficiente y no creemos en la energía infinita, de modo que si queremos encontrar las restricciones que gobiernan estos sistemas complejos nuestra mirada debe estar en las cadenas de suministros que abastecen a estas infraestructuras. Sobre estas infraestructuras críticas y sobre como las cadenas de suministros les permiten responder a los requerimientos del entorno es la temática central de este libro.
 
 ![Infraestructuras Críticas y Cadenas de Suministros Post COVID-19](images/coverMZA.png)
 
@@ -31,16 +29,16 @@ Este libro es una compilación de los trabajos de investigación y estancias de 
 
 
 Este libro digital ha sido financiado en parte por las siguientes instituciones y por la amable cesión de derechos de publicación de los autores de cada capítulo.
-Entre otros nso gustaría agradecer a:
+Entre otros nos gustaría agradecer a:
 
 
-- Programa Imeroamericano de Ciencia y Tecnología para el Desarrollo
+- Programa Iberoamericano de Ciencia y Tecnología para el Desarrollo
 
 ![Red CyTED](images/cyted.png)
 
 y al grupo de trabajo de CyTED 
 [link](https://themys.sid.uncu.edu.ar/rpalma/En_Desarrollo/about.html)
-
+nuestro agradecimiento por hacer la revisión de pares de los capítulos presentados.
 
 - Asociación Grupo Montevideo de Universidades
 ![AUGM](images/augm.png)
@@ -55,8 +53,14 @@ y al grupo de trabajo de CyTED
 
 Prefacio por Ricardo Palma y  Dr. Gustavo Masera
 
+La pandemia nos permitió avanzar en pocas semanas enormemente en campos del teletrabajo y la educación a distancia. Lamentablemente la post-pandemia parece estar signada por la decisión de no pocos directivos que pretenden regresar sobre sus pasos, pero son los sectores más jóvenes (los milenials) quienes imponen su necesidad de mantener estas formas, mucho más amables con el ambiente, de trabajar moviendo bits y no átomos. 
+Este signo de la post-pandemia es acompañado también por nuevos enfoques respecto a la medición y gestión del riesgo. Notablemente la normativa ISO 22301 ha sido en la región el "caballo de batalla" que permitió trabajar en la pandemia y una tendencia en la que no se observa retroceso.
 
-Sin dudas uno de los actores más destacados en el escenario de la post-pnademia ha sido el CHATGPT. Si le preguntásemos a esta entidad creada por *openai.com*. Le preguntamos entorno a estas cuestiones al bot y esto es lo que nos dice:
+
+
+Sin dudas uno de los actores más destacados en el escenario de la post-pnademia ha sido el CHATGPT de Open AI y las inteligencias artificiales que los gigantes de la industria se han visto obligados a presentar aún sin tenerlas terminadas . 
+
+No hemos podido resistirnos a la tentación de preguntarle acerca de este libro una de las entidad creada por *openai.com*. Le preguntamos entorno a estas cuestiones al bot respecto al tema central de este libro y esto es lo que nos dice:
 
     Hola podemos hablar en español ?
     
@@ -81,19 +85,21 @@ Sin dudas uno de los actores más destacados en el escenario de la post-pnademia
 
 En resumen, la pandemia ha tenido un impacto significativo en las cadenas de suministro de Latinoamérica y el Caribe, lo que ha llevado a cambios en la demanda, aumento de los costos y la interrupción de la cadena de suministro.
 
-Se puede decir que el impacto del COVID-19 en la región ha sido muy significativo y complejo, y que la situación post-covid en Latinoamérica aún es incierta. La recuperación económica puede ser lenta y desigual, y las cadenas de suministro pueden enfrentar nuevos desafíos en el futuro. Es importante seguir monitoreando la situación y tomar medidas adecuadas para adaptarse a los cambios y desafíos que surjan en el futuro. En especial luego del conflicto con Ucrania-Rusia En general, el libro puede ser una fuente valiosa de información y perspectivas sobre la gestión de la cadena de suministro en la región, y puede ayudar a los lectores a entender mejor los desafíos actuales y futuros.
+Se puede decir que el impacto del COVID-19 en la región ha sido muy significativo y complejo, y que la situación post-covid en Latinoamérica aún es incierta. La recuperación económica puede ser lenta y desigual, y las cadenas de suministro pueden enfrentar nuevos desafíos en el futuro. Es importante seguir monitoreando la situación y tomar medidas adecuadas para adaptarse a los cambios y desafíos que surjan en el futuro. En especial luego del conflicto con Ucrania-Rusia. En general, el libro que están escribiendo tu y tus colegas puede ser una fuente valiosa de información y perspectivas sobre la gestión de la cadena de suministro con sus infraestructuras que están en estado más crítico que antes en la región. Trabajo como el que presentas pueden ayudar a los lectores a entender mejor los desafíos actuales e imaginar los futuros.
 
 
-Que ***chatgpt*** catalogie así este trabajo no hace más que hablar muy bien de los autores de cada capítulo, pero sólo por haber incluido este texto en el libro el software de revisión de plagio editorial urkund nos castiga con un 3% de índice de plagio.
+Que ***chatgpt*** cataloge así este trabajo no hace más que hablar muy bien de los autores de cada capítulo, pero sólo por haber incluido este texto en el libro el software de revisión de plagio editorial **Urkund** nos castiga con un 3% de índice de plagio.
+
+Es claro que la aparición de la Inteligencia artificial es otro de los signos característicos de la post pandemia, pero como tecnología emergente veremos que aún le falta bastantes para poder se adoptada sin correr riesgos innecesarios.
 
 ## ¿Por qué escribir un libro sobre algo que la inteligencia artificial podría escribir miles de páginas? {-}
 
-Justamente por que esta es una obra creada por la gente y para la gente. Cada uno de nosotros , editores y autores de los capípulos vivimos en esta región. Trabajamos, comemos, enseñamos, cultivamos, cosechamos, compramos y vendemos, viajamos y hasta escribimos canciones y poemos; todo en este escenario de tanta diversidad y con tantos parecidos que llamamos latinoamérica. 
+Justamente por que esta es una obra creada por la gente y para la gente. Cada uno de nosotros , editores y autores de los capítulos vivimos en esta región. Trabajamos, comemos, enseñamos, cultivamos, cosechamos, compramos y vendemos, viajamos y hasta escribimos canciones y poemas; todo en este escenario de tanta diversidad y con tantos parecidos que llamamos Latinoamérica. 
 
-Este libro contiene en los diferentes capítulos la mirada interna y externa,  *** "en la  enesperanza de poder ver global y actuar local ***" . Pero en esta oportunidad como editores hemos querido rescatar sobre todo las experiencias exitosas así como los fracasos de las cosas que la pandemia nos obligó a desarrollar para adaptarnos a un mundo totalmente nuevo y desconocido.
+Este libro contiene en los diferentes capítulos la mirada interna y externa,  ***"en la esperanza de poder ver global y actuar local "*** . Pero en esta oportunidad como editores hemos querido rescatar sobre todo las experiencias exitosas así como los fracasos de las cosas que la pandemia nos obligó a desarrollar para adaptarnos a un mundo totalmente nuevo y desconocido.
 
 
-Uno de los capítulos que recomendamos tener en cuanta es el Cap. 6 en el que **Alexis Sdrigotti** nos señala la importancia que durante y post pandemia han tenido las infraestructuras críticas, pero para poner de manifiesto este paradigma ha elegido el caso de Jaón.
+Uno de los capítulos que recomendamos tener en cuanta es el Cap. 6 en el que **Alexis Sdrigotti** nos señala la importancia que durante y post pandemia han tenido las infraestructuras críticas, pero para poner de manifiesto este paradigma ha elegido el caso de Japón.
 
 Los impactos que el precio de los combustibles tienen ha quedado referido en varios capítulos (Cap.2 Aruani et al.^[https://ricardorpalma.github.io/IC_SCM/escenarios-energeticos-globales.html]y Cap. 10[Riera et al. ]) pero también esto nos abre una ventana de incertidumbres para la región ya que los fertilizantes que nuestra manufactura de origen agropecuario tiene un enrome componente energético.
 
