@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 10 Nueva Generacion de Infraestructuras. Lecciones y Desafios sobre Riesgos Emergentes | IC &amp; SCM Post COVID_19</title>
+  <meta name="description" content="Este libro es una compilación de los trabajos de investigación y estancias de investigadores de varios colegas de latino américa y caribe. Guestavo Masera y Ricardo Palma desean agradecer a todos los colaboradores que nos han confiado sus materiales para que los editemos en esta publicación. Como docentes investigadores de la Universidad Nacional de Cuyo hemos vivido este fenómeno singular de tiempo que denominamos la pandemia del post-covid-19 y como los autores de los capítulos incluidos, tenemos la convicción que la existencias de nuevas estrategias emergentes y prácticas innovadoras que mejoras la resiliencia y han demostrado innovación de la gestión de las infraestructuras críticas y las cadenas de suministros." />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 10 Nueva Generacion de Infraestructuras. Lecciones y Desafios sobre Riesgos Emergentes | IC &amp; SCM Post COVID_19" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/ricardorpalma/IC_SCM/images/coverMZA.png" />
+  <meta property="og:description" content="Este libro es una compilación de los trabajos de investigación y estancias de investigadores de varios colegas de latino américa y caribe. Guestavo Masera y Ricardo Palma desean agradecer a todos los colaboradores que nos han confiado sus materiales para que los editemos en esta publicación. Como docentes investigadores de la Universidad Nacional de Cuyo hemos vivido este fenómeno singular de tiempo que denominamos la pandemia del post-covid-19 y como los autores de los capítulos incluidos, tenemos la convicción que la existencias de nuevas estrategias emergentes y prácticas innovadoras que mejoras la resiliencia y han demostrado innovación de la gestión de las infraestructuras críticas y las cadenas de suministros." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 10 Nueva Generacion de Infraestructuras. Lecciones y Desafios sobre Riesgos Emergentes | IC &amp; SCM Post COVID_19" />
+  
+  <meta name="twitter:description" content="Este libro es una compilación de los trabajos de investigación y estancias de investigadores de varios colegas de latino américa y caribe. Guestavo Masera y Ricardo Palma desean agradecer a todos los colaboradores que nos han confiado sus materiales para que los editemos en esta publicación. Como docentes investigadores de la Universidad Nacional de Cuyo hemos vivido este fenómeno singular de tiempo que denominamos la pandemia del post-covid-19 y como los autores de los capítulos incluidos, tenemos la convicción que la existencias de nuevas estrategias emergentes y prácticas innovadoras que mejoras la resiliencia y han demostrado innovación de la gestión de las infraestructuras críticas y las cadenas de suministros." />
+  <meta name="twitter:image" content="https://github.com/ricardorpalma/IC_SCM/images/coverMZA.png" />
+
+<meta name="author" content="Editores: Ricardo R. Palma y Gustavo A. Masera" />
+
+
+<meta name="date" content="2023-05-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"/>
+<link rel="next" href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducción</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#agradecimientos"><i class="fa fa-check"></i>Agradecimientos:</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#por-qué-escribir-un-libro-sobre-algo-que-la-inteligencia-artificial-podría-escribir-miles-de-páginas"><i class="fa fa-check"></i>¿Por qué escribir un libro sobre algo que la inteligencia artificial podría escribir miles de páginas?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#indicaciones-para-colaboradores"><i class="fa fa-check"></i>Indicaciones para colaboradores</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html"><i class="fa fa-check"></i><b>1</b> Escenarios energeticos globales</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#introducción-1"><i class="fa fa-check"></i><b>1.1</b> Introducción</a></li>
+<li class="chapter" data-level="1.2" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#contingencia-post-covid-19"><i class="fa fa-check"></i><b>1.2</b> Contingencia post COVID-19</a></li>
+<li class="chapter" data-level="1.3" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#la-producción-de-petróleo-y-sus-derivados-en-la-actualidad"><i class="fa fa-check"></i><b>1.3</b> La producción de petróleo y sus derivados en la actualidad</a></li>
+<li class="chapter" data-level="1.4" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#la-dependencia-del-gas-y-el-petróleo-ruso"><i class="fa fa-check"></i><b>1.4</b> La dependencia del gas y el petróleo ruso</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#qué-sucede-con-el-petróleo"><i class="fa fa-check"></i><b>1.4.1</b> ¿Qué sucede con el petróleo?</a></li>
+<li class="chapter" data-level="1.4.2" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#cómo-afecta-esto-a-américa-latina"><i class="fa fa-check"></i><b>1.4.2</b> ¿Cómo afecta esto a América Latina?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#argentina-en-el-contexto-mundial-del-desarrollo-de-hidrocarburos-no-convencionales-fuera-de-estados-unidos"><i class="fa fa-check"></i><b>1.5</b> Argentina en el contexto mundial del desarrollo de hidrocarburos no convencionales fuera de Estados Unidos</a></li>
+<li class="chapter" data-level="1.6" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#los-principales-cinco-países-con-potencial-de-shale-gas-fuera-de-estados-unidos"><i class="fa fa-check"></i><b>1.6</b> Los principales cinco países con potencial de shale gas fuera de Estados Unidos</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#china"><i class="fa fa-check"></i><b>1.6.1</b> China</a></li>
+<li class="chapter" data-level="1.6.2" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#argentina"><i class="fa fa-check"></i><b>1.6.2</b> Argentina</a></li>
+<li class="chapter" data-level="1.6.3" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#algeria"><i class="fa fa-check"></i><b>1.6.3</b> Algeria</a></li>
+<li class="chapter" data-level="1.6.4" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#canadá"><i class="fa fa-check"></i><b>1.6.4</b> Canadá</a></li>
+<li class="chapter" data-level="1.6.5" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#méxico"><i class="fa fa-check"></i><b>1.6.5</b> México</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#los-principales-cinco-países-con-potencial-de-shale-gas-fuera-de-estados-unidos-1"><i class="fa fa-check"></i><b>1.7</b> Los principales cinco países con potencial de shale gas fuera de Estados Unidos</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#rusia"><i class="fa fa-check"></i><b>1.7.1</b> Rusia</a></li>
+<li class="chapter" data-level="1.7.2" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#china-1"><i class="fa fa-check"></i><b>1.7.2</b> China</a></li>
+<li class="chapter" data-level="1.7.3" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#argentina-1"><i class="fa fa-check"></i><b>1.7.3</b> Argentina</a></li>
+<li class="chapter" data-level="1.7.4" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#libia"><i class="fa fa-check"></i><b>1.7.4</b> Libia</a></li>
+<li class="chapter" data-level="1.7.5" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#australia"><i class="fa fa-check"></i><b>1.7.5</b> Australia</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="escenarios-energeticos-globales.html"><a href="escenarios-energeticos-globales.html#fuentes"><i class="fa fa-check"></i><b>1.8</b> Fuentes</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><i class="fa fa-check"></i><b>2</b> Cambio en las pautas de consumo y movilidad post covid</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html#introducción-2"><i class="fa fa-check"></i><b>2.1</b> Introducción</a></li>
+<li class="chapter" data-level="2.2" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html#efectos-guerra-de-rusia-y-ucrania-en-la-energía"><i class="fa fa-check"></i><b>2.2</b> Efectos Guerra de Rusia y Ucrania en la energía</a></li>
+<li class="chapter" data-level="2.3" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html#la-transición-energética"><i class="fa fa-check"></i><b>2.3</b> La transición energética</a></li>
+<li class="chapter" data-level="2.4" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html#transición-energética-en-argentina"><i class="fa fa-check"></i><b>2.4</b> Transición energética en Argentina</a></li>
+<li class="chapter" data-level="2.5" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html#escenario-de-transición-económica"><i class="fa fa-check"></i><b>2.5</b> Escenario de transición económica</a></li>
+<li class="chapter" data-level="2.6" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html#escenario-cero-neto"><i class="fa fa-check"></i><b>2.6</b> Escenario Cero Neto</a></li>
+<li class="chapter" data-level="2.7" data-path="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html"><a href="cambio-en-las-pautas-de-consumo-y-movilidad-post-covid.html#bibliografía"><i class="fa fa-check"></i><b>2.7</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><i class="fa fa-check"></i><b>3</b> Wine turism as a resilient trend in post covid era</a>
+<ul>
+<li class="chapter" data-level="" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#abstract."><i class="fa fa-check"></i>Abstract.</a></li>
+<li class="chapter" data-level="" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#keywords"><i class="fa fa-check"></i>Keywords:</a></li>
+<li class="chapter" data-level="3.1" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#introduction"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#literature-review"><i class="fa fa-check"></i><b>3.2</b> Literature review</a></li>
+<li class="chapter" data-level="3.3" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#materials-and-methods"><i class="fa fa-check"></i><b>3.3</b> Materials and methods</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#country-selection"><i class="fa fa-check"></i><b>3.3.1</b> Country selection</a></li>
+<li class="chapter" data-level="3.3.2" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#content-analysis"><i class="fa fa-check"></i><b>3.3.2</b> Content Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#results-of-the-analysis"><i class="fa fa-check"></i><b>3.4</b> Results of the Analysis</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#the-case-of-australia-and-usa-the-new-world"><i class="fa fa-check"></i><b>3.4.1</b> The case of Australia and USA (the New World)</a></li>
+<li class="chapter" data-level="3.4.2" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#the-case-of-germany-and-portugal-the-old-world"><i class="fa fa-check"></i><b>3.4.2</b> The case of Germany and Portugal( the Old World)</a></li>
+<li class="chapter" data-level="3.4.3" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#the-case-of-argentina"><i class="fa fa-check"></i><b>3.4.3</b> The case of Argentina</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="wine-turism-as-a-resilient-trend-in-post-covid-era.html"><a href="wine-turism-as-a-resilient-trend-in-post-covid-era.html#references"><i class="fa fa-check"></i><b>3.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html"><i class="fa fa-check"></i><b>4</b> Los fertilizantes en la post-pandemia</a>
+<ul>
+<li class="chapter" data-level="" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#impacto-de-la-crisis-energética-y-alimentaria"><i class="fa fa-check"></i>Impacto de la crisis energética y alimentaria</a></li>
+<li class="chapter" data-level="" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="4.1" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#introduccion"><i class="fa fa-check"></i><b>4.1</b> Introducción</a></li>
+<li class="chapter" data-level="4.2" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#estado-del-arte"><i class="fa fa-check"></i><b>4.2</b> Estado del Arte</a></li>
+<li class="chapter" data-level="4.3" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#mercado-global"><i class="fa fa-check"></i><b>4.3</b> Mercado global</a></li>
+<li class="chapter" data-level="4.4" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#mercado-local"><i class="fa fa-check"></i><b>4.4</b> Mercado local</a></li>
+<li class="chapter" data-level="4.5" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#desafıos-locales"><i class="fa fa-check"></i><b>4.5</b> Desafı́os locales</a></li>
+<li class="chapter" data-level="4.6" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#analisis-de-escenarios-alternativos"><i class="fa fa-check"></i><b>4.6</b> Análisis de escenarios alternativos</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#primer-escenario"><i class="fa fa-check"></i><b>4.6.1</b> Primer escenario</a></li>
+<li class="chapter" data-level="4.6.2" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#segundo-escenario"><i class="fa fa-check"></i><b>4.6.2</b> Segundo escenario</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#nuevas-medidas"><i class="fa fa-check"></i><b>4.7</b> Nuevas medidas</a></li>
+<li class="chapter" data-level="4.8" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#conclusiones"><i class="fa fa-check"></i><b>4.8</b> Conclusiones</a></li>
+<li class="chapter" data-level="4.9" data-path="los-fertilizantes-en-la-post-pandemia.html"><a href="los-fertilizantes-en-la-post-pandemia.html#bibliografıa"><i class="fa fa-check"></i><b>4.9</b> Bibliografı́a</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html"><i class="fa fa-check"></i><b>5</b> IC Relacion con la perspectiva Japonesa</a>
+<ul>
+<li class="chapter" data-level="" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#el-rol-de-la-ic-en-los-ods-2030"><i class="fa fa-check"></i>El rol de la IC en los ODS-2030</a></li>
+<li class="chapter" data-level="5.1" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#introducción-3"><i class="fa fa-check"></i><b>5.1</b> Introducción</a></li>
+<li class="chapter" data-level="5.2" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#sobre-el-concepto-de-infraestructuras-críticas"><i class="fa fa-check"></i><b>5.2</b> Sobre el concepto de Infraestructuras Críticas</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#su-vínculo-con-la-reconstrucción-del-pasado-inmediato"><i class="fa fa-check"></i><b>5.2.1</b> Su vínculo con la reconstrucción del pasado inmediato</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#sostenibilidad-criticidad-y-resiliencia-en-las-infraestructuras-criticas"><i class="fa fa-check"></i><b>5.3</b> Sostenibilidad, criticidad y resiliencia en las Infraestructuras Criticas</a></li>
+<li class="chapter" data-level="5.4" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#temas-principales-de-la-agenda-global-y-su-impacto-en-las-ic"><i class="fa fa-check"></i><b>5.4</b> Temas principales de la agenda global y su impacto en las IC</a></li>
+<li class="chapter" data-level="5.5" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#reflexiones-finales."><i class="fa fa-check"></i><b>5.5</b> Reflexiones finales.</a></li>
+<li class="chapter" data-level="" data-path="ic-relacion-con-la-perspectiva-japonesa.html"><a href="ic-relacion-con-la-perspectiva-japonesa.html#referencias-bibliograficas"><i class="fa fa-check"></i>Referencias Bibliograficas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>6</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>6.1</b> Publishing</a></li>
+<li class="chapter" data-level="6.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>6.2</b> 404 pages</a></li>
+<li class="chapter" data-level="6.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>6.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelo-triple-helice-su-vigencia-post-covid.html"><a href="modelo-triple-helice-su-vigencia-post-covid.html"><i class="fa fa-check"></i><b>7</b> Modelo Triple Helice su vigencia post COVID</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="modelo-triple-helice-su-vigencia-post-covid.html"><a href="modelo-triple-helice-su-vigencia-post-covid.html#introducción-4"><i class="fa fa-check"></i><b>7.1</b> INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="7.2" data-path="modelo-triple-helice-su-vigencia-post-covid.html"><a href="modelo-triple-helice-su-vigencia-post-covid.html#contexto-actual-y-desafíos"><i class="fa fa-check"></i><b>7.2</b> CONTEXTO ACTUAL Y DESAFÍOS</a></li>
+<li class="chapter" data-level="7.3" data-path="modelo-triple-helice-su-vigencia-post-covid.html"><a href="modelo-triple-helice-su-vigencia-post-covid.html#conclusión"><i class="fa fa-check"></i><b>7.3</b> CONCLUSIÓN</a></li>
+<li class="chapter" data-level="" data-path="modelo-triple-helice-su-vigencia-post-covid.html"><a href="modelo-triple-helice-su-vigencia-post-covid.html#referencias"><i class="fa fa-check"></i>REFERENCIAS</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><i class="fa fa-check"></i><b>8</b> ¿Se ha postergado la agenda de los ODS 2030 por el COVID en LAC?</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html#objetotivo"><i class="fa fa-check"></i><b>8.1</b> Objetotivo</a></li>
+<li class="chapter" data-level="8.2" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html#hipótesis"><i class="fa fa-check"></i><b>8.2</b> Hipótesis</a></li>
+<li class="chapter" data-level="8.3" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html#marco-teórico"><i class="fa fa-check"></i><b>8.3</b> Marco Teórico</a></li>
+<li class="chapter" data-level="8.4" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html#el-objetivo-12-producción-y-consumo-responsable."><i class="fa fa-check"></i><b>8.4</b> El Objetivo 12 Producción y Consumo Responsable.</a></li>
+<li class="chapter" data-level="8.5" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html#situación-europea"><i class="fa fa-check"></i><b>8.5</b> Situación europea</a></li>
+<li class="chapter" data-level="8.6" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html#conclusiones-para-latinoamérica-y-caribe"><i class="fa fa-check"></i><b>8.6</b> Conclusiones para Latinoamérica y Caribe</a></li>
+<li class="chapter" data-level="" data-path="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html"><a href="se-ha-postergado-la-agenda-de-los-ods-2030-por-el-covid-en-lac.html#bibliografía-1"><i class="fa fa-check"></i>Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><i class="fa fa-check"></i><b>9</b> Nueva Generacion de Infraestructuras. Lecciones y Desafios sobre Riesgos Emergentes</a>
+<ul>
+<li class="chapter" data-level="" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#introducción-5"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="9.1" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#infraestructuras-e-infraestructuras-de-nueva-generación"><i class="fa fa-check"></i><b>9.1</b> Infraestructuras e infraestructuras de nueva generación</a></li>
+<li class="chapter" data-level="9.2" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#infraestructuras-críticas-una-aproximación"><i class="fa fa-check"></i><b>9.2</b> Infraestructuras críticas: una aproximación</a></li>
+<li class="chapter" data-level="9.3" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#análisis-de-riesgos-en-infraestructuras"><i class="fa fa-check"></i><b>9.3</b> Análisis de Riesgos en Infraestructuras</a></li>
+<li class="chapter" data-level="9.4" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#consideraciones-sobre-riesgos-en-infraestructuras-críticas"><i class="fa fa-check"></i><b>9.4</b> Consideraciones sobre riesgos en infraestructuras críticas</a></li>
+<li class="chapter" data-level="9.5" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#lecciones-y-desafíos-para-américa-latina"><i class="fa fa-check"></i><b>9.5</b> Lecciones y desafíos para América Latina</a></li>
+<li class="chapter" data-level="9.6" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#conclusión-necesidad-de-una-mayor-gobernanza"><i class="fa fa-check"></i><b>9.6</b> Conclusión: necesidad de una mayor gobernanza</a></li>
+<li class="chapter" data-level="" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><i class="fa fa-check"></i><b>10</b> Nueva Generacion de Infraestructuras. Lecciones y Desafios sobre Riesgos Emergentes</a>
+<ul>
+<li class="chapter" data-level="" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#introducción-6"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="10.1" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#infraestructuras-e-infraestructuras-de-nueva-generación-1"><i class="fa fa-check"></i><b>10.1</b> Infraestructuras e infraestructuras de nueva generación</a></li>
+<li class="chapter" data-level="10.2" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#infraestructuras-críticas-una-aproximación-1"><i class="fa fa-check"></i><b>10.2</b> Infraestructuras críticas: una aproximación</a></li>
+<li class="chapter" data-level="10.3" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#análisis-de-riesgos-en-infraestructuras-1"><i class="fa fa-check"></i><b>10.3</b> Análisis de Riesgos en Infraestructuras</a></li>
+<li class="chapter" data-level="10.4" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#consideraciones-sobre-riesgos-en-infraestructuras-críticas-1"><i class="fa fa-check"></i><b>10.4</b> Consideraciones sobre riesgos en infraestructuras críticas</a></li>
+<li class="chapter" data-level="10.5" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#lecciones-y-desafíos-para-américa-latina-1"><i class="fa fa-check"></i><b>10.5</b> Lecciones y desafíos para América Latina</a></li>
+<li class="chapter" data-level="10.6" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#conclusión-necesidad-de-una-mayor-gobernanza-1"><i class="fa fa-check"></i><b>10.6</b> Conclusión: necesidad de una mayor gobernanza</a></li>
+<li class="chapter" data-level="" data-path="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html"><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><i class="fa fa-check"></i><b>11</b> Influencia de la volatilidad de los precios del petroleo en la produccion Sudamericana de plasticos.</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#productores-de-petróleo-en-suramérica"><i class="fa fa-check"></i><b>11.1</b> Productores de petróleo en Suramérica</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#brasil"><i class="fa fa-check"></i><b>11.1.1</b> Brasil</a></li>
+<li class="chapter" data-level="11.1.2" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#venezuela"><i class="fa fa-check"></i><b>11.1.2</b> Venezuela</a></li>
+<li class="chapter" data-level="11.1.3" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#argentina-2"><i class="fa fa-check"></i><b>11.1.3</b> Argentina</a></li>
+<li class="chapter" data-level="11.1.4" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#colombia"><i class="fa fa-check"></i><b>11.1.4</b> Colombia</a></li>
+<li class="chapter" data-level="11.1.5" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#chile"><i class="fa fa-check"></i><b>11.1.5</b> Chile</a></li>
+<li class="chapter" data-level="11.1.6" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#otros-países-de-la-región"><i class="fa fa-check"></i><b>11.1.6</b> Otros países de la región</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#comportamiento-de-precios-de-barril-de-petróleo"><i class="fa fa-check"></i><b>11.2</b> Comportamiento de precios de barril de petróleo</a></li>
+<li class="chapter" data-level="11.3" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#transición-a-materias-primas-sostenibles"><i class="fa fa-check"></i><b>11.3</b> Transición a materias primas sostenibles**</a></li>
+<li class="chapter" data-level="11.4" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#desafíos-futuros"><i class="fa fa-check"></i><b>11.4</b> Desafíos futuros</a></li>
+<li class="chapter" data-level="" data-path="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html"><a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias-4.html"><a href="referencias-4.html"><i class="fa fa-check"></i>Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">IC &amp; SCM Post COVID_19</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Capítulo 10</span> Nueva Generacion de Infraestructuras. Lecciones y Desafios sobre Riesgos Emergentes<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Instituto de Ingeniería Industrial
+Universidad Nacional de Cuyo</p>
+<p>Autores:</p>
+<ul>
+<li>Ricardo R. Palma<a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a>,</li>
+<li>Facundo Corvalán Araujo<a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a>,</li>
+<li>Gustavo Masera <a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a></li>
+</ul>
+<p><strong>Resumen:</strong> El propósito de este documento radica en la comprensión de los
+desafíos que se presentan a las infraestructuras de próxima generación.
+El método de trabajo se enfoca en el análisis de las líneas que llevan
+adelante las plataformas asociativas de investigación (research
+clusters) desde una perspectiva integrada sobre el estudio de las
+infraestructuras. Se plantea que los riesgos emergentes en las mismas,
+especialmente en las críticas (energía, transporte, tecnologías de la
+información y comunicación, etc.), serán en los próximos años cuestiones
+de máximo interés para el conjunto de los países y que formarán parte
+ineludible de las agendas. Se concluye que la región de América Latina
+tendrá que preocuparse de invertir, no sólo en el acrecentamiento de las
+capacidades en infraestructuras, sino también en su protección,
+reconociendo su criticidad y su vulnerabilidad, además de generar
+mecanismos de gobernanza.</p>
+<p><strong>Palabras Clave:</strong> infraestructuras críticas; riesgos; gobernanza.</p>
+<div id="introducción-6" class="section level2 unnumbered hasAnchor">
+<h2>Introducción<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#introducción-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En los últimos años se ha hecho visible la necesidad de reflexionar
+sobre las llamadas “Infraestructuras de Próxima Generación” <a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a>. En tal sentido, se han conformado en diversos ámbitos
+nacionales e internacionales, grupos de investigación (research
+clusters) que reúnen –en una estrategia asociativa de carácter
+intersectorial- a representantes de puertos, ciudades, empresas,
+organizaciones, think tanks y centros académicos. La idea es brindar una
+respuesta estratégica frente a las tendencias principales –a modo de
+nuevos desafíos- para la organización y el funcionamiento de las
+sociedades: la urbanización, la digitalización y la transición
+energética. El propósito central de estas plataformas de conocimiento se
+orienta a clarificar el debate en relación a los problemas que surgen de
+la interacción entre las diferentes infraestructuras, y especialmente,
+aquellos que emergen del cruce de éstas con la electricidad y las
+tecnologías de la información y comunicación. Es que el hecho de
+conectar todas las cosas lleva a la vigencia del paradigma E+I
+(Electricity plus Information). (Masera et al, 2005), como principal
+esquema de análisis. Téngase en cuenta que gran parte de las
+infraestructuras (puertos, caminos, ciudades, sistemas de interconexión
+eléctrico, gasoductos) se ha construido durante el siglo pasado, con
+tecnologías de varias décadas en algunos casos. Pero, tal como lo
+plantean los especialistas de la nueva generación de infraestructuras,
+debe garantizarse que éstas funciones correctamente “ahora y en el
+futuro próximo:”Todos enfrentamos el mismo desafío: ¿cómo hacemos que
+nuestra infraestructura 'responda', para que pueda responder a los
+continuos cambios y las principales tendencias? ¿Cómo podemos hacer un
+mejor uso de las redes existentes con los menores costos sociales
+posibles y sin perder de vista al usuario final?” <a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a></p>
+</div>
+<div id="infraestructuras-e-infraestructuras-de-nueva-generación-1" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Infraestructuras e infraestructuras de nueva generación<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#infraestructuras-e-infraestructuras-de-nueva-generación-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Las sociedades contemporáneas descansan sobre numerosas y variadas
+infraestructuras a modo de conjuntos tecnológicos relativamente estables
+que articulan los diferentes sistemas vivos del sistema. Desde la
+perspectiva de la infranómica, la infraestructura es un sistema
+socio-tecnológico de segundo orden (sistema de sistemas), que cumple con
+un servicio vital, como es transmitir o transferir un flujo de algo
+(bienes, información, etc.) entre los nodos del sistema (Gheorghe et
+al., 2005).</p>
+<p>Todas las infraestructuras pueden ser consideradas de nueva generación,
+pero el rol lo ocupan principalmente estas infraestructuras críticas han
+sido definidas de diversa manera. Más específicamente, las
+“Infraestructuras Críticas” (IC) son una red de sistemas
+interdependientes de gran escala, y que implican complejas
+distribuciones físicas transfronterizas asociadas a tecnologías y redes
+cibernéticas, producto de la interconexión con los sistemas de
+tecnologías de la información y comunicación (Gheorghe et al., 2005).</p>
+<p>La Oficina de Protección de la Infraestructura Crítica de los Estados
+Unidos (EUA), por ejemplo, las concibe como los sistemas que podrían ser
+debilitados o destruidos en sus capacidades básicas. En este esquema se
+pueden incluir, entonces, a los bancos, el transporte, las redes de
+provisión de agua, servicios del gobierno y otras áreas públicas. Sobre
+esa concepción se han desarrollado, además, estrategias para asegurar el
+ciberespacio y la protección física de las infraestructuras criticas
+<a href="#fn54" class="footnote-ref" id="fnref54"><sup>54</sup></a> o la asociación para la seguridad de las mismas y la
+“resiliencia” (Canadá, 2014).</p>
+<p>La Organización de los Estados Americanos (OEA), de su parte, las define
+como “aquellas instalaciones, sistemas y redes, así como servicios y
+equipos físicos y de tecnología de la información, cuya inhabilitación o
+destrucción tendría un impacto negativo sobre la población, la salud
+pública, la seguridad, la actividad económica, el medio ambiente,
+servicios de gobierno, o el eficaz funcionamiento de un Estado” (OEA,
+2007) y, en consecuencia, sus Estados miembros han convenido en una
+“Declaración sobre la”Protección de Infraestructura Crítica ante las
+Amenazas Emergentes”, (OEA, 2015).</p>
+<p>La Unión Europea coincide en considerarlas como aquellas instalaciones,
+redes, servicios y equipos físicos y de tecnología de la información
+cuya interrupción o destrucción pueden tener una repercusión importante
+en la salud, la seguridad o el bienestar económico de los ciudadanos o
+en el eficaz funcionamiento de los gobiernos de los Estados miembros
+(Comisión Europea, 2004). Desde 2006, se desarrolló en este contexto el
+Programa Europeo de protección de las IC (PEPIC).</p>
+<p>Puede notarse que las diversas definiciones colocan el énfasis en los
+impactos sobre la defensa y la seguridad económica de una sociedad en el
+nivel regional o nacional.</p>
+</div>
+<div id="infraestructuras-críticas-una-aproximación-1" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Infraestructuras críticas: una aproximación<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#infraestructuras-críticas-una-aproximación-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Los principales sistemas de infraestructuras críticas son:
+1- energía (centrales y redes de energía);
+2- abastecimiento de agua (embalses, almacenamiento, tratamiento de agua potable y redes);
+3- tratamiento de desechos;
+4- transporte (aeropuertos, puertos, instalaciones intermodales, ferrocarriles y redes de transporte público, sistemas de control del tráfico);
+5- infraestructura de la información y comunicación, que incluye las tecnologías de base digital e internet, usadas para gestionar, monitorear y controlar las otras
+infraestructuras.</p>
+<p>Además, hay consenso en que las infraestructuras
+criticas pueden incluir las siguientes áresa: instituciones financieras;
+sector sanitario; alimentación; producción, almacenamiento y transporte
+de mercancías peligrosas (materiales químicos, biológicos, radiológicos
+y nucleares); administración (servicios básicos, instalaciones, redes de
+información; etc. <a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a>.</p>
+<p>En las Infraestructuras críticas se pueden enumerar tres aspectos
+principales.</p>
+<ol style="list-style-type: decimal">
+<li><p>Su función es la de producir un flujo continuo y
+universal de servicios básicos que resultan esenciales para el
+desarrollo económico y social. En otras palabras, son elementos que
+tienen que estar disponibles para todos, en todo momento. El usuario no
+se preocupa de la complejidad detrás de su acceso al servicio, puesto
+que le interesa solamente conectarse y que el servicio esté disponible.</p></li>
+<li><p>Las infraestructuras tienden a no ser posesión de un único dueño
+(público o privado). Además, cada operador, regulador y usuario pueden
+tener distintas lógicas de funcionamiento. La regionalización de los
+mercados, por ejemplo. en la Unión Europea, ha conducido al “desacople”
+de su sistema eléctrico (unbundling), donde ningún operador controla la
+infraestructura de producción o distribución. Entonces, cuando los
+sistemas se interconectan a través de las fronteras, los mismos entes
+nacionales ven recortados sus competencias.</p></li>
+<li><p>Las infraestructuras han
+sido diseñadas para satisfacer necesidades sociales básicas, pero los
+cambios tecnológicos y organizativos han elevado su nivel de
+complejidad, quedando sujetas a riesgos internos y externos debido a
+fallos accidentales o intencionales. Y cuando se producen fallos, éstos
+tienden a propagarse excediendo los límites estructurales, funcionales y
+territoriales de cada sistema singular.</p></li>
+</ol>
+</div>
+<div id="análisis-de-riesgos-en-infraestructuras-1" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Análisis de Riesgos en Infraestructuras<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#análisis-de-riesgos-en-infraestructuras-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El estudio de los riesgos se encuentra en auge desde la creación
+relativamente reciente de la organización International Risk Governance
+Council (IRGC, 2005). Debe tenerse en cuenta que en los inicios de la
+postguerra fría, Ulrich Beck (1992) introdujo el concepto de “sociedad
+del riesgo”. En 1986 había ocurrido el caso más emblemático sobre la
+fragilidad de los sistemas tecnológicos. En efecto, el accidente de la
+planta nuclear de Chernobyl (Ucrania) en la antigua Unión Soviética,
+mostró simbólicamente el límite de la modernidad (Lechte, 2003).</p>
+<p>Beck argumenta que la verdadera naturaleza del riesgo ha cambiado.
+Sostiene que la tecnología actual ha creado nuevas formas de riesgo e
+impone una peligrosidad cualitativamente distinta a la del pasado. El
+riesgo ha dejado de ser contingente para convertirse en un rasgo
+estructural del nuevo orden de cosas y, además, hacia fin de siglo, el
+riesgo ha pasado a tener secuelas sobre un área geográfica más extensa y
+crecientemente global. Beck señala problemas y critica las limitaciones
+de la sociedad actual, donde los accidentes no pueden ser aislados (como
+el cambio climático), aunque no llega a proponer un modo para gestionar
+esos problemas. A pesar de ello, su valoración del riesgo social ha sido
+muy influyente y ha permitido profundizar los debates sobre el diálogo
+político en torno a temas críticos: ambientales, alimentarios,
+energéticos, etc. (Mythe, 2004). En análisis más recientes (p.e.
+Bischoff, 2008), junto a una más precisa determinación de amenazas y
+fallas potenciales, de sus causas y consecuencias, se ha avanzado en la
+elaboración de perspectivas intersectoriales; incluso se asiste al
+nacimiento de una nueva área de conocimiento (la Infranomics como
+disciplina de disciplinas), de las que se derivan modelizaciones,
+instrumentos y prácticas (Gheorge et al, 2013).</p>
+<p>En el mundo globalización aparecen riesgos sistémicos por su impacto
+sobre el conjunto de la sociedad; los que, incluso, pueden desarrollar
+un contagio internacional. Aunque no hay una definición aceptada
+universalmente, sin embargo, se han clasificado dos posibles categorías
+de riesgo (Arven and Renn, 2010): aquellas donde el riesgo se expresa
+mediante probabilidades de un suceso aunado a valoraciones sobre
+expectativas; y las otras, que sostienen que los riesgos se expresan
+fundamentalmente por la ocurrencia de eventos imprevistos y las
+consecuencias que pueden emanar de los mismos, con un fuerte componente
+de incertidumbre. De acuerdo a lo expuesto, puede afirmarse que la
+noción de riesgo se refiere, en suma, a la incertidumbre acerca de la
+gravedad de las consecuencias (o resultados) de una actividad, con
+respecto a algo que la sociedad percibe como valioso, vital o crítico.
+Los riesgos pueden derivarse de numerosos factores y en distintos
+ámbitos: cracks financieros; crisis alimentaria; calentamiento global;
+aumento de la desertificación; estancamiento de las negociaciones
+comerciales; problemas de suministros de gas y restricciones
+energéticas; renovados conflictos geopolíticos; fallas en los sistemas,
+como black-outs eléctricos de grandes dimensiones (OECD, 2003).</p>
+<p>Más recientemente, durante el desarrollo de la cumbre anual del Foro
+Económico Mundial titulado “Creando un futuro compartido en un mundo
+fracturado” se presentó el informe anual “Riesgos Globales 2018” (Davos,
+2018). En el mismo se propicia el fomento de la resiliencia en sistemas
+complejos y se advierte que debido a la alta exigencia que se efectúa a
+los sistemas, el ritmo acelerado de los cambios puede resultar en una
+intensificación de 4 riesgos como: a) Las amenazas cibernéticas y los
+ciberataques así como la proliferación de armas de destrucción masiva;
+b) La pérdida de la biodiversidad, clima extremo y colapso de
+ecosistemas, grandes desastres naturales o ambientales causados por el
+hombre y el fracaso en la mitigación del cambio climático: c) el aumento
+de las tensiones geopolíticas; d) el riesgo de que estalle otra crisis
+financiera.</p>
+</div>
+<div id="consideraciones-sobre-riesgos-en-infraestructuras-críticas-1" class="section level2 hasAnchor" number="10.4">
+<h2><span class="header-section-number">10.4</span> Consideraciones sobre riesgos en infraestructuras críticas<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#consideraciones-sobre-riesgos-en-infraestructuras-críticas-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Existe una relación directa entre infraestructuras críticas (IC), nuevas
+tecnologías (TIC) y sociedad de la información (SI). Por consiguiente,
+un conjunto de fallos en el funcionamiento de las TIC, pueden hacer
+colapsar por un cierto período la base técnica de la SI, y ello
+resultará en la pérdida de transmisiones de datos y del acceso a fuentes
+de información, afectando otras IC (agua, transporte, electricidad,
+logística, aeropuertos), lo que en pocos días derivará colapsando la
+sociedad misma.</p>
+<p>El riesgo implica la posibilidad de daño o avería en un sector
+determinado, por ejemplo, la infraestructura de la información y de la
+comunicación (ICC), conjuntamente con la extensión de este daño a todas
+las otras infraestructuras que en la sociedad de la información dependen
+de ella (IRGC, 2006). Hay diversos casos testigos de los riesgos que se
+presentan a las IC. En uno, pueden darse los posibles fallos en las TIC
+(sistemas operativos, programas de ofimática, cortes masivos de energía
+eléctrica), y la posibilidad de “cyberataques” a Estados en su
+totalidad. En otro, puede revelarse la fragilidad de los sistemas de
+seguridad de determinadas instalaciones.</p>
+<p>En ambos casos, las nuevas tecnologías se asientan o impactan sobre el
+espacio urbano donde se estructuran los nodos de IC dadas por el
+complejo tecnológico-electrónicoinformacional. Debe reflexionarse sobre
+la logística que supone sostener los requerimientos de subsistencia de
+las grandes concentraciones urbanas y la administración de sus recursos.
+Es que la concentración urbana crea un nuevo espacio “las megalópolis”,
+constituyéndose en ellas sistemas “meta estables” que las sostienen, y
+por ello, verdaderamente críticos (Ortiz, 2012).</p>
+<p>Los riesgos pueden incidir en las Infraestructuras críticas de una
+sociedad, afectando la estabilidad política y la prosperidad económica
+de los países. Además, son procesos que pueden generar cambios en la
+distribución del poder entre los países, así como efectos catastróficos
+en regiones vulnerables.</p>
+<p>En lo que respecta a los desastres naturales, los terremotos y tsunamis
+han afectado a todas las civilizaciones en las diversas épocas
+históricas. La diferencia en la actualidad, es que las consecuencias
+podrían ser más desastrosas aún, por la difícil continuidad de la vida
+cotidiana luego de la destrucción de las infraestructuras básicas. Los
+ejemplos sobran: Nueva Orleáns, posteriormente al huracán Katrina; Haití
+después del terremoto; Japón, seguidamente a los problemas de la central
+nuclear de Fukushima, la pandemia del Covid 19, etc. Estos casos
+evidencian la sensibilidad y el riesgo que representa el impacto sobre
+las infraestructuras críticas. Al mismo tiempo, dan la impresión de que
+la sociedad se encuentra al borde de perder el control de frente a un
+número importante de riesgos, amenazas, desastres y crisis no
+convencionales, tal como lo demostró en su momento el Committee on
+Improving Risk Analysis Approaches (2009).</p>
+<p>Según el International Risk Governance Council (2010), que toma la
+definición de Riesgo de Arven y Renn, el riesgo de las infraestructuras
+críticas debe ser pensado desde las consecuencias más o menos inciertas
+de un evento o de una actividad, y desde su potencial impacto en temas
+críticos, ya sea para la sociedad en su conjunto, ya sea para un grupo o
+un individuo concreto. Esta ponderación puede comprender cosas como los
+bienes naturales, el ambiente en su conjunto, la salud humana, los
+recursos naturales, etc., como elementos más abstractos como la
+estabilidad social y económica, la privacidad, etc. A pesar de que es
+difícil prever los riesgos, una de las tareas implicar imaginar
+escenarios, posibles vías que puedan adoptar, mediante un estudio
+sistemático de situaciones futuribles, con la finalidad de definir las
+mejores estrategias paliativas.</p>
+<p>El reconocimiento de la importancia de las Infraestructuras críticas se
+ha propagado por las principales potencias del sistema internacional.
+Rusia, a partir de la Organización del Tratado de Seguridad Colectiva
+(OTSC) de la Comunidad de Estados Independientes (CEI) con China, y en
+conjunción en el marco de la Organización de Seguridad y Cooperación de
+Shanghai (OCS) han comenzado a crear mayores capacidades de protección
+de sus IC. Pero, las IC rusas que aportan energía a Europa, presentan
+riesgos que potencialmente afectarían la seguridad de los suministros
+energéticos (Arteaga, 2010). Por ejemplo, las situaciones conflictivas
+de inicios del siglo XXI en Ucrania-Crimea, Siria-Irak, Afganistán, etc.
+son una clara evidencia de lo que se llama riesgos a la “seguridad de
+los corredores energéticos” (Palma, Masera, 2014), y que actualmente,
+con la Invasión de Rusia a Ucrania en 2022 y el consiguiente ingreso a
+un período bélico se han confirmado.</p>
+<p>En el ámbito regional, en el seno de la OEA, se estableció en 2004 un
+consenso generalizado con el establecimiento de la llamada "Estrategia
+Interamericana integral para combatir las amenazas a la seguridad
+cibernética”. Es un enfoque multidimensional y multidisciplinario
+dirigido a la formación de una cultura de seguridad cibernética, para
+proteger la infraestructura de las telecomunicaciones, redes y sistemas
+de información. Posteriormente, la misma OEA propició la creación de una
+“Red Interamericana de Seguridad Cibernética” (2005), a partir de los
+grupos nacionales de "vigilancia y alerta", también conocidos al
+presente como los “Equipos de Respuesta a Incidentes de Seguridad en
+Computadoras” (CSRITs), cuyos objetivos son: a) identificar y luchar
+contra las amenazas, independientemente de su origen y motivación; b)
+formular planes nacionales de respuestas a situaciones de emergencia; c)
+crear una red interamericana de vigilancia y alerta para diseminar
+rápidamente información sobre seguridad cibernética y responder a
+crisis, incidentes y amenazas a la seguridad en computadoras.</p>
+<p>Un ejemplo significativo de los nuevos riesgos y de su gestión en un
+ámbito regional mediante mecanismos de gobernanza, lo reveló la crisis
+del sistema de interconexión eléctrico europeo en el año 2004, donde a
+pesar de la pluralidad de actores involucrados, públicos y privados de
+diferentes países, el conjunto debió actuar de manera coordinada para
+hacer frente al problema (Gheorghe et al., 2005). Este ejemplo ha
+mostrado que una adecuada gestión de riesgos: a) posee la ventaja de
+reducir las externalidades negativas que pueden derivarse potencialmente
+de las interdependencias negativas o por el contagio de una situación;
+b) promueve una gestión de la demanda y el ajuste de prioridades en una
+sociedad; c) reduce los tiempos de restauración del sistema luego de una
+falla y así, permite que se mantengan los servicios críticos.</p>
+</div>
+<div id="lecciones-y-desafíos-para-américa-latina-1" class="section level2 hasAnchor" number="10.5">
+<h2><span class="header-section-number">10.5</span> Lecciones y desafíos para América Latina<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#lecciones-y-desafíos-para-américa-latina-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El único futuro posible es que la región asuma una participación activa
+en la construcción de la sociedad de la información y que pueda generar
+capacidades para enfrentar los nuevos riesgos, entre ellos, los
+denominados “guerras híbridas”. Así, una nueva visión del desarrollo
+debe incorporar necesariamente una mejor política de acceso, de
+inversiones en infraestructuras y de efectivo uso de las nuevas
+tecnologías (Girard and Perini, 2013).</p>
+<p>El objetivo declarado por los documentos de la CEPAL, en tanto que
+organismo coordinador de las conferencias ministeriales y reuniones
+preparatorias frente a las Cumbres mundiales, ha sido desde el documento
+de Bávaro, “incorporar el proyecto de la sociedad de la información en
+la agenda del desarrollo”. Paralelamente, se ha reconocido la diversa
+velocidad de los países en este proceso, junto a una heterogeneidad de
+respuestas internas- para la incorporación de la SI. Los dos objetivos
+salientes de la “revolución digital” propuesta en la Declaración de
+Montevideo y el Plan de trabajo 2013-2015 para la implementación del
+eLAC2015 son: 1) cerrar brechas en las tecnologías más avanzadas y de
+impacto masivo 2) acelerar la difusión de tales tecnologías, lo que
+implica mejorar el acceso y la apropiación a las mismas (Peres y
+Hilbert, 2009).</p>
+<p>En el Reporte de Seguridad Cibernética e Infraestructura Crítica de las
+Américas se aprecia un enfoque general de los ataques cibernéticos que
+sufrieron las infraestructuras críticas a nivel hemisférico, resaltando
+alarmante “el aumento radical de la sofisticación de los ataques
+cibernéticos” y “el aumento considerable de los ataques destructivos, o
+ataques cibernéticos, que fueron concebidos para”eliminar o destruir”
+los sistemas back-end” (OEA y Trend Micro, 2015).</p>
+<p>En ese marco, países como Brasil tienen ya definida una política clara
+de inserción en el nuevo mundo del conocimiento. Otros, ya tienen
+iniciativas en estado de avance, como Chile Digital o Argentina
+Conectada y las últimas acciones en materia de ciberseguridad frente a
+los desafíos que presenta la reciente Cumbre del G-20 en Buenos Aires,
+entre otros. Pero, en la cuestión específica del fortalecimiento de las
+infraestructuras y del riesgo en las Infraestructuras, aún queda mucho
+por realizar. Además, una verdadera concepción de la integración
+regional, no puede dejar de lado la cuestión de las infraestructuras ni
+la de los riesgos asociados a este proceso.</p>
+<p><strong>Los desafíos para América Latina, son:</strong></p>
+<p>1. Los diversos temas que surgen de la conformación de infraestructuras
+van a influir, domésticamente, en la calidad de vida, bienestar y
+posibilidades de proyección de los ciudadanos; y asimismo, influirá
+sobre la definición de los intereses en las políticas exteriores, en los
+procesos de cooperación regional y en el comportamiento general de la
+región;</p>
+<p>2. Tener más infraestructuras con más tecnologías proyecta sin dudas un
+camino hacia el desarrollo; aunque, paradójicamente, esta vía conlleva
+fragilidad, porque las ventajas poseen una fuerte interconexión con sus
+potenciales efectos. El desafío de una buena gestión de riesgos
+descansa, entonces, en el aprovechamiento del beneficio de las
+infraestructuras más nuevas tecnologías, aunado a una estrategia de
+minimización de las consecuencias negativas asociadas a los riesgos;</p>
+<p>3. Es imprescindible la gestión de los riesgos de carácter regional, en
+especial de lo que poseen un alto nivel de impacto sobre la salud, la
+seguridad, el medio ambiente, la economía o la sociedad, y que estos
+sean evaluados mediante mecanismos consultivos con una amplia
+participación. La dualidad desarrollo-riesgos necesita ser analizada por
+los diversos públicos interesados (stakeholders) e incluida como
+variable clave por los formuladores de políticas;</p>
+<p>4. Las infraestructuras deben ser operadas por empresas (privadas o
+públicas) pero con organización de negocios y búsqueda de rentabilidad.
+De aquí la necesidad de gobernanza como una herramienta para la gestión
+integrada cuestiones críticas, donde participan múltiples actores, con
+intereses y valoraciones diversas;</p>
+<p>5. Hay que pensar como objeto de análisis el riesgo específico en las
+infraestructuras críticas. La seguridad en el abastecimiento del
+servicio y los impactos que podrían causar una extensa interrupción de
+los servicios deberían constituir una prioridad de alto nivel para la
+legislación, la coordinación de políticas, la planificación y la
+evaluación de escenarios;</p>
+<p>6. Los riesgos globales no están confinados dentro de los límites
+nacionales, y por lo tanto, no pueden ser gestionados mediante acciones
+o políticas de un solo sector o gobierno aislado. La gobernanza de
+riesgos, y de las infraestructuras críticas conectadas regionalmente,
+requiere una especial coordinación entre los países involucrados;</p>
+<p>7. Las infraestructuras en su acelerada evolución, "consumen"
+productos y servicios, al mismo tiempo que habilitan nuevas capacidades
+sociales y económicas. Esta situación define el campo de juego del
+desarrollo: por ejemplo, ¿qué energía se produce y cómo se consume la
+energía nuclear versus nuevas fuentes?, ¿cuántas empresas pueden generar
+y distribuir energía? De modo que hay que evaluar los efectos sobre la
+estructura de trabajo y ampliar los estudios sobre la necesidad /
+oportunidad de recursos especializados con nuevas habilidades
+profesionales mediante la ampliación de competencias;</p>
+<p>8. Las Infraestructuras críticas implican una continua formación de las
+competencias científicas y tecnológicas, a modo de ventaja comparativa
+dinámica. Pero, puesto que las mismas son diseñadas, operadas,
+mantenidas y utilizadas por personas, las capacidades profesionales
+estarán determinadas sobre la eficiencia y competencia que puedan
+obtener en el funcionamiento continuo y estable de las infraestructuras.
+Los países más desarrollados ya están invirtiendo en la formación de los
+profesionales y técnicos que tendrán responsabilidad sobre las IC. Y no
+se trata sólo de ingenieros o técnicos, sino también de economistas,
+especialistas en leyes, sociólogos, etc.</p>
+<p>9. Si bien es verdad que los países se encuentran, por momentos,
+desgarrados entre distintas demandas y solicitudes, también es cierto
+que la estructura estatal deberá cumplir nuevas funciones y generar
+capacidades ampliadas en un escenario cada vez más complejo. Incluso,
+donde la soberanía no es sólo territorial sino espacial, de allí que
+surgen innovadores conceptos como “Estado Digital” o “Estado Red”.</p>
+<p>En suma, se plantea la importancia de fundamentar estrategias para la
+inserción de América Latina en la comunidad internacional. Además,
+planificar un sendero de crecimiento de las Infraestructuras críticas,
+con base en los estudios de infranómica, teniendo en cuenta riesgos y
+amenazas potenciales. De otra parte, implementar mecanismos de gestión
+de los riesgos, basados en el desarrollo sostenible y la gobernanza; en
+un plano más operativo, formular las bases para políticas públicas
+encaminadas a la gestión y regulación del riesgo.</p>
+</div>
+<div id="conclusión-necesidad-de-una-mayor-gobernanza-1" class="section level2 hasAnchor" number="10.6">
+<h2><span class="header-section-number">10.6</span> Conclusión: necesidad de una mayor gobernanza<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#conclusión-necesidad-de-una-mayor-gobernanza-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Desde el punto de vista de los riesgos en infraestructuras, se ha
+sostenido que las casi dos primeras décadas del siglo XXI han implicado
+el ingreso a una era signada por la complejidad socio-tecnológica, donde
+la inestabilidad y la inseguridad no son meramente variables exógenas y
+circunstanciales, sino rasgos estructurales del sistema social. Es la
+paradoja del progreso: más desarrollo conlleva una mayor fragilidad, de
+allí la necesidad de generar un mecanismo de gobernanza más adecuado
+sobre los problemas emergentes. Las ventajas que trae el uso masivo y
+ubicuo de infraestructuras, cruzadas por nuevas tecnologías de la
+información y comunicación, pueden convertirse al mismo tiempo en
+amenazas significativas, debido a sus problemas de seguridad, en niveles
+y extensión que son difíciles de prever, tanto como es arduo predecir la
+evolución de las tecnologías y sus empleos futuros. La confiabilidad de
+las infraestructuras críticas y la confianza que el ciudadano y la
+sociedad pueden poner en ellas, están en el centro de la cuestión. En
+particular, las vulnerabilidades de las Infraestructuras críticas pueden
+ser gestionadas a través de mecanismos y políticas de gobernanza,
+representando ésta un nuevo tipo de colaboración entre actores públicos
+y privados en la toma de decisiones colectivas. La elaboración de los
+libros verdes y libros blancos, son resultados tangibles de estos
+amplios procesos consultivos y participativos.</p>
+<p>Se concluye que los riesgos emergentes en la SI serán en los próximos
+años cuestiones de máximo interés para el conjunto de los países y que
+formarán parte ineludible de las agendas. La región latinoamericana, en
+particular, al igual que los países desarrollados, tendrá que
+preocuparse de invertir, no sólo en el acrecentamiento de las
+capacidades en infraestructuras, sino también en su protección,
+reconociendo su criticidad y su vulnerabilidad.</p>
+</div>
+<div id="referencias-2" class="section level2 unnumbered hasAnchor">
+<h2>Referencias<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#referencias-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Aven, T. and O. Renn (2010). Risk Management and Governance. Concepts,
+Guidelines and Applications, Berlin, Springer Verlag.</p>
+<p>Beck, U. (1992). Risk Society. Towards a New Modernity. London, Sage.</p>
+<p>Bischoff, H.J. (2008). Risks in Modern Society. Dordrech, Springer.</p>
+<p>Canada (2014). Action Plan for Critical Infrastructure 2014-2017.</p>
+<p>Disponible:
+<a href="http://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/plncrtcl-nfrstrctr-2014-17/index-eng.aspx" class="uri">http://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/plncrtcl-nfrstrctr-2014-17/index-eng.aspx</a></p>
+<p>CEPAL (2003). Los Caminos Hacia una Sociedad de la Información en
+América Latina y el Caribe, Santiago de Chile, UN-CEPAL.</p>
+<p>Comisión Europea (2004). Hacia la Europa basada en el conocimiento. La
+Unión Europea y la sociedad de la información. Lux.: CE.</p>
+<p>Committee on Improving Risk Analysis Approaches (2009). Advancing Risk
+Assessment, Washington D.C.,The National Academy Press.</p>
+<p>Davos (2018). Global Risks Report 2018. Davos, Switzerland.</p>
+<p>Gheorghe, A. et. al. (2005). Critical Infraestructures at Risk,
+Dordretch, Springer.</p>
+<p>Gheorghe, A., et al. (edit.) (2013). Infranomics. Sustainability,
+Engineering Design and Governance, Dordrech, Springer.</p>
+<p>Girard, B. and F. Perini (eds.) (2013). Enabling Openness: The future of
+the information society in Latin America and the Caribbean. Otawa:
+Canada, IDRC.</p>
+<p>International Risk Governance Council <strong>IRGC</strong> (2006), White Paper on
+Managing and Reducing Social Vulnerabilities from Coupled Critical
+Infrastructures, Geneva.</p>
+<p>International Risk Governance Council <strong>IRGC</strong> (2010). Emerging risks.
+Sources, drivers and governance issues, Geneva, Rev. edition.</p>
+<p>Lechte (2003). J. Key Contemporary Concepts. London, Sage. Mansell, R.
+(edit.) (2009). The Information Society. Critical concepts in sociology.
+London and New York, Routledge.</p>
+<p>Masera, G. and J. Ortiz (2018). “A Perfect World? Risks and Threats in
+the Information Society”, International Journal of Research &amp;
+Methodology in Social Science, vol. 4, n. 1, (Jan-March),pp 36-49.</p>
+<p>Masera, M. et al. (2005): “The Security of Information and Communication
+Systems and the E+I Paradigm”, in: Gheorghe, A. et al., op. cit., p.
+35-56.</p>
+<p>Mythen, G. (2004). Ulrich Beck. A Critical Introduction to the Risk
+Society. London, Pluto Press.</p>
+<p>NETmundial (2014). “Multistakeholder Statement” (April, 24th, 2014). En:
+<a href="http://netmundial.br/wp-content/uploads/2014/04/NETmundialMultistakeholder-Document.pdf" class="uri">http://netmundial.br/wp-content/uploads/2014/04/NETmundialMultistakeholder-Document.pdf</a></p>
+<p>NIPP (2009). National Infraestructure Protection Plan. US Department of
+Homeland Security.Washington D.C., U.S. De. of Home Security.</p>
+<p>OEA (2007). Declaración de Panamá sobre la Protección de la
+Infraestructura Crítica en el Hemisferio, 01 de marzo de 2007.</p>
+<p>OEA (2015). Promoción de la Seguridad Hemisférica, Comisión de Seguridad
+Hemisférica, 17 de abril 2015.</p>
+<p>OEA y Trend Micro (2015). Reporte de Seguridad Cibernética e
+Infraestructura Crítica de las Américas. Washignton DC. Paris;</p>
+<p>International Futures Project. Ortiz, J. (2012). “Estrategia de Defensa
+Cibernética en la era de la información”, Revista de la Escuela Superior
+de Guerra del Ejército Argentino, N° 582, (septiembre-diciembre), p.
+89-112.</p>
+<p>Palma, R. y G. Masera (2014). “Escenarios energéticos. Aplicación del
+enfoque PESTEL”. Mendoza, ECEFI 2014-UTN</p>
+<p>Peres, W. y M. Hilbert (eds.) (2009). La sociedad de la información en
+mérica Latina y el Caribe. Santiago de Chile, CEPAL.</p>
+<p>Renn, O. (2008). Risk Governance. Coping with Uncertainty in a Complex
+World. London, Esarthscan</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="49">
+<li id="fn49"><p><a href="mailto:rpalma@gmail.com" class="email">rpalma@gmail.com</a><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#fnref49" class="footnote-back">↩︎</a></p></li>
+<li id="fn50"><p><a href="mailto:facu.corv@hotmail.com" class="email">facu.corv@hotmail.com</a><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#fnref50" class="footnote-back">↩︎</a></p></li>
+<li id="fn51"><p><a href="mailto:gmasera@ffyl.uncu.edu.ar" class="email">gmasera@ffyl.uncu.edu.ar</a><a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#fnref51" class="footnote-back">↩︎</a></p></li>
+<li id="fn52"><p>(Gheorge et
+al, 2013)<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#fnref52" class="footnote-back">↩︎</a></p></li>
+<li id="fn53"><p>(cfr.
+<a href="http://www.nextgenerationinfrastructures.eu/" class="uri">http://www.nextgenerationinfrastructures.eu/</a> )<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#fnref53" class="footnote-back">↩︎</a></p></li>
+<li id="fn54"><p>(NIPP, 2009)<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#fnref54" class="footnote-back">↩︎</a></p></li>
+<li id="fn55"><p>(Ortiz, 2012)<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes-1.html#fnref55" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="nueva-generacion-de-infraestructuras.-lecciones-y-desafios-sobre-riesgos-emergentes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="influencia-de-la-volatilidad-de-los-precios-del-petroleo-en-la-produccion-sudamericana-de-plasticos..html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["IC_SCM_2.pdf", "IC_SCM_2.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
