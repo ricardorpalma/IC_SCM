@@ -12,6 +12,6 @@ authors:
   rocid: "https://orcid.org/0000-0002-7195-2821"
 title: "Infraestructura Crítica y Cadena de Suministros"
 version: 1.0.3
-doi: 10.5281/zenodo.1234
+doi: https://doi.org/10.5281/zenodo.15148894
 date-released: 2023-04-04
 url: "https://ricardorpalma.github.io/IC_SCM/"
