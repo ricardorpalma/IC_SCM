@@ -10,3 +10,5 @@ Universidad Nacional de Cuyo
 
 DOI link <https://doi.org/10.5281/zenodo.15148858>
 
+Book link <https://ricardorpalma.github.io/IC_SCM/>
+
