@@ -14,11 +14,11 @@ Book link <https://ricardorpalma.github.io/IC_SCM/>
 
 ### Citation
 
-@software{ricardo_r_palma_2025_15148894,
+@book{ricardo_r_palma_2025_15148894,
   author       = {Ricardo R. Palma},
-  title        = {ricardorpalma/IC\_SCM: Acelerador para android},
+  title        = {ricardorpalma/IC\_SCM: Bookdown},
   month        = apr,
-  year         = 2025,
+  year         = 2023,
   publisher    = {Zenodo},
   version      = {1.0.3},
   doi          = {10.5281/zenodo.15148894},
